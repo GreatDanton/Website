@@ -9,7 +9,7 @@ $(document).ready(function () {
     
     $(".back-to-top").click(function() {
         $("body").animate({
-             scrollTop: 0
+             scrollTop: "0",
         }, 1000);
     });
 
