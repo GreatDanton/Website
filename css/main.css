@@ -233,7 +233,7 @@ comment-area {                             /*comment-text + .btn-post together*/
      .my-row2 {
         display: flex;
         margin-top: 70px;
-        margin-bottom: 70px;
+        margin-bottom: 0px;
         flex-direction: column;
         width: 100%;
     }
