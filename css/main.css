@@ -161,6 +161,7 @@ comment-area {                             /*comment-text + .btn-post together*/
     resize: none;
     width: 100%;
     display: block;
+    z-index: -1; !important
 }
 
 .btn-post {                               /*button to post comments */
