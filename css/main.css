@@ -161,7 +161,7 @@ comment-area {                             /*comment-text + .btn-post together*/
     resize: none;
     width: 100%;
     display: block;
-    z-index: -1; !important
+    z-index: 1;
 }
 
 .btn-post {                               /*button to post comments */
@@ -365,7 +365,7 @@ comment-area {                             /*comment-text + .btn-post together*/
            right: -200px;
            height: 100%;
            width: 200px;
-           z-index: 1;
+           z-index: 1000; !important
         border-bottom: 1px solid #333;
         margin-top: -20px;
     }
