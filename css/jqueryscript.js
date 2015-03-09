@@ -13,7 +13,8 @@ $(document).ready(function () {
     
     
     /*############### MENI resolution 768px###################### */
-    $(".navigation-button").click(function (e) {
+   
+ $(".navigation-button").click(function (e) {
 
         e.stopPropagation();
         if ($(".navigation-slider").css("right") === "-200px"){
@@ -36,7 +37,7 @@ $(document).ready(function () {
             }, 200);
         }
     });
-    
+
     /*####################COMMENTS##############################*/
     $(".comment-text").keydown(function(e) {
         if(e.which === 13) {
