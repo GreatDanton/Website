@@ -65,24 +65,29 @@ button::-moz-focus-inner {  /*Removes dotted rectangle around buttons*/
         color: $color-secondary;
         text-decoration: none;
         height: auto;
-        width: 260px;
-        padding-left: 40px;
+        width: 260px;          /**/
+        padding-left: 40px;/*Translates text 40px from the left side of the off canvas*/
+        border-bottom: 1px solid gray;
     }
     
     li:hover {
-        background-color: grey;
+        background-color: #ffff4c;
+    }
+    
+    a:hover {
+        color: #000;
     }
 }
 
 .empty {
-    height: 80px;
+    height: 80px; /*used to push links down for the amount of pixels*/
 }
 
 #push-button {
     height: 48px;
     background-color: $color-primary;
     color: $color-secondary;
-    border-radius: 2px;
+    border-radius: 1px;
     padding: 0 20px;
     border: 2px solid $color-primary;
     margin-top: 20px;
@@ -101,7 +106,7 @@ button::-moz-focus-inner {  /*Removes dotted rectangle around buttons*/
     border-radius: 1px;
     background-color: #000;
     color: #fff;
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 #push-button-black:hover {
