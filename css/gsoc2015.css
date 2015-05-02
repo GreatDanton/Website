@@ -75,12 +75,9 @@ button::-moz-focus-inner {
 .off-canvas-right {
   width: 100px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
-  -webkit-transform: translateX(100px);
-      -ms-transform: translateX(100px);
-          transform: translateX(100px);
+  right: -100px;
   background: #000;
   color: #fff; }
   .off-canvas-right li {
