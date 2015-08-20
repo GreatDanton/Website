@@ -127,6 +127,23 @@ a {
       width: 100%;
   }
 
+.row-100 {
+    display: flex;
+    margin: 100px 0px;
+    width: 100%;
+}
+
+.part-50 {
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.width-100px {
+    max-width: 100px;
+}
+
+
 .left-side {
     width: 200px;
     order: 1;
