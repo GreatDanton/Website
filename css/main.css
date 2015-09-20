@@ -161,7 +161,7 @@ h1, h2, h3, h4 {
 .right-side {
     width: 200px;
     order: 3;
-    
+
 }
 
 .left-side ul {
@@ -174,7 +174,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
 }
 
-comment-area {                             /*comment-text + .btn-post together*/
+.comment-area {                             /*comment-text + .btn-post together*/
     display: block;
     margin-bottom: 20px;
 }
@@ -260,7 +260,7 @@ comment-area {                             /*comment-text + .btn-post together*/
         flex-direction: column;
         width: 100%;
     }
-    
+
     .centered-list {
         text-align: center;
         margin: 50px auto;
@@ -280,7 +280,7 @@ comment-area {                             /*comment-text + .btn-post together*/
             margin-top: -10px;
             cursor: pointer;
             user-select: none;
-    }  
+    }
 
     .language:hover {
         color: #666;
@@ -290,6 +290,11 @@ comment-area {                             /*comment-text + .btn-post together*/
         color: #FFF;
     }
 
+  .small-image {
+    display: flex;
+    margin: 40px auto;
+  }
+
 
 @media screen and (min-width: 802px) {
     .body {
@@ -297,22 +302,22 @@ comment-area {                             /*comment-text + .btn-post together*/
         margin: 0 auto;
         text-decoration: none;
     }
-    
+
     .logo {
         display: flex;
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
     }
-    
-    
 
-    
+
+
+
     .footer {
         height: 180px;
 
     }
-    
+
     .footer .units-row {
         position: absolute;
         display: flex;
@@ -324,12 +329,12 @@ comment-area {                             /*comment-text + .btn-post together*/
         display: block;
         text-align: center;
     }
-    
+
     .footer .unit-20 .back-to-top {
         float: right;
         margin-right: 35px;
     }
-    
+
 }
 
 @media screen and (min-width: 651px) and (max-width: 801px) {
@@ -337,13 +342,13 @@ comment-area {                             /*comment-text + .btn-post together*/
         max-width: 800px;
         margin: 0 auto;
     }
-    
+
     .logo {
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
     }
-    
+
     .my-row {
         display: flex;
         margin-top: 70px;
@@ -351,7 +356,7 @@ comment-area {                             /*comment-text + .btn-post together*/
         flex-direction: column;
         width: 100%;
     }
-    
+
     .left-side {
         text-align: center;
         margin: 50px auto;
@@ -360,7 +365,7 @@ comment-area {                             /*comment-text + .btn-post together*/
         flex-direction: column;
 
     }
-    
+
     .right-side {
         text-align: center;
         margin: 50px auto;
@@ -369,11 +374,11 @@ comment-area {                             /*comment-text + .btn-post together*/
         justify-content: center;
 
     }
-        
+
     .footer {
         height: 180px;
     }
-    
+
     .footer .units-row {
         position: absolute;
         display: flex;
@@ -385,12 +390,12 @@ comment-area {                             /*comment-text + .btn-post together*/
         display: block;
         text-align: center;
     }
-    
+
     .footer .unit-20 .back-to-top {
         float: right;
         margin-right: 35px;
     }
-    
+
 
 
 }
@@ -399,17 +404,17 @@ comment-area {                             /*comment-text + .btn-post together*/
     body {
         overflow-x: hidden;
           }
-    
+
     .navigation li {
         display: none;
     }
-    
+
      .navigation-button:hover {
         color: #666;
         cursor: pointer;
 
     }
-    
+
     .navigation-button {
         display: inline-flex;
         color: #FFF;
@@ -418,7 +423,7 @@ comment-area {                             /*comment-text + .btn-post together*/
         padding: 2px 4px;
         user-select: none;
     }
-    
+
     .navigation-slider {
          background: #333;
            display: block;
@@ -430,34 +435,34 @@ comment-area {                             /*comment-text + .btn-post together*/
         border-bottom: 1px solid #333;
         margin-top: -20px;
     }
-    
+
     .navigation-slider ul {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    
+
     .navigation-slider li {
         width: 100%;
          text-align: center;
        }
-    
+
     .navigation-slider a{
         color: #FFF;
         line-height: 50px;
         width: 100%;
         padding: 15px 90px;
     }
-    
+
     .navigation-slider a:hover {
         background-color: #666;
     }
-    
-    
+
+
     .body p {
         padding: 0 3px;
     }
-    
+
      .my-row {
         display: flex;
         margin-top: 70px;
@@ -465,7 +470,7 @@ comment-area {                             /*comment-text + .btn-post together*/
         flex-direction: column;
         width: 100%;
     }
-    
+
     .left-side {
         text-align: center;
         margin: 50px auto;
@@ -474,7 +479,7 @@ comment-area {                             /*comment-text + .btn-post together*/
         flex-direction: column;
 
     }
-    
+
     .right-side {
         text-align: center;
         margin: 50px auto;
@@ -483,12 +488,12 @@ comment-area {                             /*comment-text + .btn-post together*/
         justify-content: center;
 
     }
-    
-        
+
+
     .footer {
         height: 210px;
     }
-    
+
     .footer .units-row {
         position: absolute;
         display: flex;
@@ -510,13 +515,13 @@ comment-area {                             /*comment-text + .btn-post together*/
         justify-content: center;
         margin: 10px 0;
     }
-    
+
     .footer .unit-20 .language {
         margin-left: 0px;
         width: 120px;
         text-align: center;
         padding-left: 0px;
     }
-    
+
 
 }
