@@ -1,126 +1,333 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
 <head>
-    <title>Jan Pribošek</title>
-    <meta name="description" content="Jan Pribošek, predstavitvena stran, izdelava spletnih strani (Front end web development).">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="css/jqueryscript.js"></script>
-
-
+<title>Jan Pribošek </title>
+<meta name="description" content="Jan Pribošek, predstavitvena stran, izdelava spletnih strani">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="main.css">
+<script src="animations.js"></script>
 </head>
 
-
 <body>
-    <div class="container">
-        <div class="header">
-
-            <ul class="navigation">
-                <div class="nav-left-side">
-                    <li><a href="index.html"><span class="current-link">Home</span></a>
-                    </li>
-                    <li><a href="reference.html">Reference</a>
-                    </li>
-                    <li><a href="test.html">Test</a>
-                    </li>
-                    <li><a href="linki.html">Linki</a>
-                    </li>
-                </div>
-                <div class="nav-push"></div>
-                <div class="nav-right-side">
-                    <li><a href="#">Sign in </a>
-                    </li>
-                </div>
-
-                <div class="navigation-button">
-                    <i class="fa fa-bars fa-3x"></i>
-                </div>
-            </ul>
-            <div class="navigation-slider">
-                <ul>
-                    <li><a href="index.html"><span class="current-link">Home</span></a>
-                    </li>
-                    <li><a href="reference.html">Reference</a>
-                    </li>
-                    <li><a href="test.html">Test</a>
-                    </li>
-                    <li><a href="linki.html">Linki</a>
-                    </li>
-
-                </ul>
-            </div>
+<div class="navbar">
+  <ul id="navbar-menu">
+    <li><div class="navbar-links" id="aboutlink">About me</div></li>
+    <li><div class="navbar-links" id="projectslink">Projects</div></li>
+    <li><a target="_blank" id="githublink" href="https://github.com/GreatDanton">Github</a></li>
+    <li><div class="navbar-links" id="contactlink">Contact</div></li>
+  </ul>
+  <div class="c-hamburger"><span id="c-hamburger-span"></span></div>
+</div>
 
 
-        </div>
+<div id="navbar-modal" class="modal">
+  <div class="modal-close"><h1>X</h1></div>
+  <ul>
+    <li><a class="modal-links" id="aboutlink">About Me</a></li>
+    <li><a class="modal-links" id="projectslink">Projects</a></li>
+    <li><a target="_blank" href="https://github.com/GreatDanton">Github</a></li>
+    <li><a class="modal-links" id="contactlink">Contact</a></li>
+  </ul>
+</div>
+<div class="modal-background"></div>
 
+  <div class="intro">
+  <div class="intro-background">
+  </div>
 
+  <div class="intro-background-overlay">
+  </div>
 
-
-
-        <div class="body">
-            <div class="main-banner">
-                <img class="logo" src="css/logo3.png" alt="Jan Pribošek-logo" />
-            </div>
-            <h1 style="margin-top: 50px">Dobrodošli!</h1>
-            <p> Stran je bila na začetku namenjena samo zame, za učenje front end web-developmenta (testiranje css frameworkov, jquery modulov ipd). Ker trenutno iščem delo na področju web developmenta, sem se odločil da jo odprem za javnost (delodajalce), saj slika pove več kot 1000 besed. Stran sem napisal sam v html5/css3/jquery, uporabil sem le Kube framework grid system. Spletna stran se prav tako odziva na različne resolucije (Responsive web design). Ko je resolucija zaslona manjša kot 651px se glavni meni skrije in pojavi se nov način izbire podstrani.</p>
-
-            <p>Komentarji na podstrani Test so izključno samo prikaz javascripta, saj je potrebno za komentarje imeti bazo podatkov, katere še nisem implementiral. Prav tako je tudi sign-in link namenjen kasnejši implementaciji login sistema. Trenutno je prisotnih še nekaj manjših napak. Isti browserji renderirajo strani na različnih operacijskih sistemih različno, zato je možno, da se vizualna podoba malenkostno razlikuje (nisem imel časa za podroben test).</p>
-            </br>
-            <h2> Na kratko o meni</h2>
-            <p> Sem 20-letni študent gradbeništva. Zaradi novega šolskega sistema moram trenutno čakati nekaj mesecev, da bom lahko opravil izpit ki mi še manjka, zato sem se odločil, da si med tem poiščem delo ki me veseli. V prostem času se rad ukvarjam s programiranjem (Web, Visual Basic, Ruby), testiranjem varnosti Wifi mrež in testiranjem open source programov (sem član <a target="_blank" href="https://launchpad.net/~u+1">Ubuntu Linux U+1</a>).</p>
-
-            <p>Za več informacij si oglejte podstrani ali pa me dobite na email spodaj. </p>
-
-
-
-
-
-
-        </div>
-
-
-
-        <div class="footer">
-
-            <div class="units-row">
-                <div class="unit-20">
-                   <a href="index-eng.html">
-                        <div class="language">
-                           English
-                        </div></a>
-
-                </div>
-
-                <div class="unit-60">
-
-                    <i class="fa fa-envelope-o fa-lg" style="margin-right: 10px"></i>pribosek.jan@gmail.com
-                </div>
-
-                <div class="unit-20">
-                    <div class="back-to-top">
-                        <p>Back to top <i class="fa fa-chevron-circle-up"></i>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
+    <div class="intro-text">
+      <h1> Jan Pribošek </h1>
+      <div class="intro-links">
+        <button id="aboutlink" class="blue">About me</button>
+        <button id="projectslink" class="blue">Projects</button>
+        <a target="_blank" href="https://github.com/GreatDanton"><button class="blue">Github</button></a>
+        <button id="contactlink" class="blue">Contact</button>
+      </div>
     </div>
+  </div>
+
+<div class="slide-2">
+
+<div class="container">
+  <ul class="content">
+    <li><h2 id="about"> About me: </h2><br>
+        <p> I am 21 years old student of Civil Engineering. I really like to program, so I spend a lot of my free time programming and solving problems either the one I need or just random ones on Hacker Rank.</p><br>
+        <p>In the meantime I am also testing open source programs (I am member of Ubuntu Linux U+1). I am currently looking for a job related to web-development, and I wanted to keep track of the things I did in the past.</p>
+      <br>
+        <p> Current knowledge: </p>
+        <ul class="bullets">
+          <li>Ruby on Rails</li>
+          <li>Python</li>
+          <li>Html5, Css3, Jquery</li>
+        </ul>
+    </li>
+
+    <li><h2 id="projects">Projects:</h2><br>
+      <div class="projects">
+        <a href="https://dry-sands-8840.herokuapp.com/" target="_blank">
+          <div class="item">
+
+        <div class="item-overlay-content">
+          <div class="description">
+          <p>Troller is a dynamic platform for commenting and rating on chosen discussions, written in Ruby on Rails.</p></div>
+        </div>
+          <img class="thumbnail" src="trollerpicture.png"></img>
+          <div class="item-title">Troller [:</div>
+          </div>
+        </a>
+
+        <a target="_blank" href="https://github.com/GreatDanton/Units-Converter">
+          <div class="item">
+            <!--<p> Converting units from imperial into metric system as well as currencies converter.</p><br>-->
+            <div class="item-overlay-content">
+              <div class="description">
+                <p>Units Converter is a gui program for converting between metric and imperial system, as well as converting currencies using the latest ratios from Google finance.</p><br><p>Written in Python & PyQt.</p>
+              </div>
+            </div>
+            <img class="thumbnail" src="unitconverterpicture.png"></img>
+            <div class="item-title">Units Converter</div>
+          </div>
+        </a>
+
+        <a target="_blank" href="https://github.com/GreatDanton/Html-Assistant">
+          <div class="item">
+            <div class="item-overlay-content">
+              <div class="description">
+              <p>Html Assistant is a python script used for adding navigation menus from .txt file to every .html file in the specified folder.</p></div>
+            </div>
+          <img style="margin-top: 44px" class="thumbnail" src="html_assistant.png"></img>
+          <div class="item-title">Html Assistant</div>
+          </div>
+        </a>
+
+        <a target="_blank" href="http://greatdanton.github.io/framework/#">
+          <div class="item">
+            <div class="item-overlay-content">
+              <div class="description">
+              <p>Just another css framework. Collection of some parts I created while making websites.</p></div>
+            </div>
+          <img class="thumbnail" src="frameworkscreenshot.png">
+          <div class="item-title">Css Framework</div>
+          </div>
+        </a>
+
+        <a target="_blank" href="https://github.com/GreatDanton/Et-sorting">
+          <div class="item">
+            <div class="item-overlay-content">
+              <div class="description">
+              <p>Python script used for sorting players into two equal teams based on their ratings made for first person shooting game Wolfenstein Enemy Territory.</p></div>
+            </div>
+          <img style="margin-top: 31px" class="thumbnail" src="et_sortingscreenshot.png"></img>
+          <div class="item-title">Et-Sorting</div>
+          </div>
+        </a>
+    </li>
+
+    <li>
+      <div class="contact-me">
+        <div class="contact-me-title">
+        <h2 id="contact" class="turn-90"> Contact Me: </h2>
+        </div>
+      <div class="contact-me-details">
+        <p> Feel free to contact me via email: </p>
+        <div class="same-line">
+        <!-- EMAIL-->
+        <div class="email-picture2">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+  <svg class="email-picture"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="34.340714mm"
+     height="24.371725mm"
+     viewBox="0 0 121.67969 86.356504"
+     id="svg2"
+     version="1.1"
+     inkscape:version="0.91 r"
+     sodipodi:docname="email.svg">
+    <defs
+       id="defs4" />
+    <sodipodi:namedview
+       id="base"
+       pagecolor="#ffffff"
+       bordercolor="#666666"
+       borderopacity="1.0"
+       inkscape:pageopacity="0.0"
+       inkscape:pageshadow="2"
+       inkscape:zoom="3.959798"
+       inkscape:cx="46.636492"
+       inkscape:cy="33.127874"
+       inkscape:document-units="px"
+       inkscape:current-layer="layer1"
+       showgrid="false"
+       inkscape:window-width="1920"
+       inkscape:window-height="1056"
+       inkscape:window-x="0"
+       inkscape:window-y="24"
+       inkscape:window-maximized="1"
+       fit-margin-top="0"
+       fit-margin-left="0"
+       fit-margin-right="0"
+       fit-margin-bottom="0" />
+    <metadata
+       id="metadata7">
+      <rdf:RDF>
+        <cc:Work
+           rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type
+             rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          <dc:title></dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <g
+       inkscape:label="Layer 1"
+       inkscape:groupmode="layer"
+       id="layer1"
+       transform="translate(-10.026297,-938.3178)">
+      <g
+         id="g4184"
+         style="stroke:#ffffff;stroke-opacity:1">
+        <path
+           inkscape:connector-curvature="0"
+           id="path4182"
+           d="M 13.598562,1021.7759 54.293875,981.08063 14.11614,940.90095 c -1.228495,0.68119 -2.089843,1.94149 -2.089843,3.45117 l 0,74.32218 c 0,1.2836 0.637979,2.3707 1.572265,3.1016 z"
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4180"
+           d="m 128.20599,1021.7271 -40.962896,-40.96287 -16.632813,16.6328 -16.316406,-16.3164 -40.695313,40.69527 c 0.678756,0.531 1.495259,0.8984 2.427735,0.8984 l 109.679693,0 c 0.96401,0 1.8108,-0.3833 2.5,-0.9472 z"
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4175"
+           d="m 127.3095,940.69782 -40.066406,40.06641 40.962896,40.96287 c 0.89507,-0.7324 1.5,-1.8008 1.5,-3.0528 l 0,-74.32218 c 0,-1.64222 -0.98723,-3.03683 -2.39649,-3.6543 z"
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="rect4168"
+           d="m 14.11614,940.90095 56.494141,56.49608 56.699219,-56.69921 c -0.49238,-0.21574 -1.02973,-0.3457 -1.60351,-0.3457 l -109.679693,0 c -0.706319,0 -1.335393,0.23012 -1.910157,0.54883 z"
+           style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </g>
+  </svg>
+        </div>
+        <!--EnD -->
+        <h3 class="contact-me-email"> pribosek.jan@gmail.com </h3>
+      </div>
+        <img id="laptop-picture" src="developer-laptop.png">
+      </div>
+    </div>
+    </li>
+</div>
+
+  </ul>
+
+</div>
+</div> <!-- end of slide-2 -->
+
+<footer class="main-footer">
+
+<!-- arrow -->
+<div class="center">
+<div id="back-to-top" class="to-top">
+  <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <!-- Created with Inkscape (http://www.inkscape.org/) -->
+  <svg
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     width="42.999989"
+     height="42.999989"
+     viewBox="0 0 42.999989 42.999989"
+     id="svg2"
+     version="1.1"
+     inkscape:version="0.91 r"
+     sodipodi:docname="arrow.svg">
+    <defs
+       id="defs4">
+      <inkscape:path-effect
+         effect="spiro"
+         id="path-effect4141"
+         is_visible="true" />
+    </defs>
+    <sodipodi:namedview
+       id="base"
+       pagecolor="#ffffff"
+       bordercolor="#666666"
+       borderopacity="1.0"
+       inkscape:pageopacity="0.0"
+       inkscape:pageshadow="2"
+       inkscape:zoom="5.8875002"
+       inkscape:cx="22.376984"
+       inkscape:cy="41.941592"
+       inkscape:document-units="px"
+       inkscape:current-layer="layer1"
+       showgrid="false"
+       units="px"
+       fit-margin-top="0"
+       fit-margin-left="0"
+       fit-margin-right="0"
+       fit-margin-bottom="0"
+       inkscape:window-width="949"
+       inkscape:window-height="702"
+       inkscape:window-x="665"
+       inkscape:window-y="129"
+       inkscape:window-maximized="0" />
+    <metadata
+       id="metadata7">
+      <rdf:RDF>
+        <cc:Work
+           rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type
+             rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          <dc:title></dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <g
+       inkscape:label="Layer 1"
+       inkscape:groupmode="layer"
+       id="layer1"
+       transform="translate(10.962884,-1025.5936)">
+      <rect
+         style="opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4180"
+         width="39.999989"
+         height="39.999989"
+         x="-9.4628839"
+         y="1027.0936"
+         rx="4" />
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="m 10.5,1041.3622 -1.0568108,1.1071 -9.4431878249999,9.8929 4.2272472249999,0 6.2727514,-6.5714 6.272753,6.5714 4.227248,0 -10.500001,-11 z"
+         id="rect4143"
+         inkscape:connector-curvature="0" />
+    </g>
+  </svg>
+</div>
+</div>
+
+</footer>
+
+
 
 </body>
 <script>
@@ -139,5 +346,4 @@
     ga('create', 'UA-60568537-1', 'auto');
     ga('send', 'pageview');
 </script>
-
 </html>
