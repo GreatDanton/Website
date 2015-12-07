@@ -1,9 +1,28 @@
+@font-face {
+  font-family: "font1";
+  src: url("font1.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "font1";
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  letter-spacing: 3px;
 }
 
 body {
@@ -223,13 +242,14 @@ body {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 6px;
-  border-color: rgba(255, 255, 255, 0.6);
-  min-width: 500px;
-  max-width: 500px;
-  min-height: 500px;
+  border-color: rgba(255, 255, 255, 0.1);
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  max-height: 400px;
   -webkit-transition: 0.3s linear;
           transition: 0.3s linear;
-  margin: 20px 20px;
+  margin: 10px 10px;
   opacity: 1;
   position: relative;
   overflow: hidden;
@@ -244,7 +264,7 @@ body {
   border-color: #fff;
   cursor: pointer;
   opacity: 1;
-  box-shadow: 0px 0px 5px 3px rgba(255,255,255,0.3);
+  box-shadow: 0px 0px 8px 4px rgba(255,255,255,0.3);
 }
 
 .item h4 {
@@ -256,7 +276,7 @@ body {
   display: block;
   margin: 20px auto 0 auto;
   max-width: 100%;
-  max-height: 400px;
+  max-height: 380px;
 }
 
 .item-title {
@@ -293,6 +313,11 @@ body {
 
 .item:hover .item-overlay-content {
   transform: translateX(0px);
+}
+
+.projects-container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .contact-me {
@@ -508,6 +533,8 @@ button:hover {
   .navbar {
     width: 100%;
     z-index: 110;
+    transform: skew(0);
+    padding: 0 0;
   }
 
   #navbar-menu {
@@ -650,6 +677,20 @@ button:hover {
   background-color: #000!important;
 }
 
+.projects-container {
+  padding: 0 5px;
+}
+
 .item {
   opacity: 1;
+  width: 100%;
+  padding: 0 0;
+  margin: 20px 0;
+  min-width: 250px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
 }

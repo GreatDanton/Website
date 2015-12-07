@@ -13,7 +13,7 @@
 <body>
 <div class="navbar">
   <ul id="navbar-menu">
-    <li><div class="navbar-links" id="aboutlink">About me</div></li>
+    <li><div class="navbar-links" id="aboutlink">About Me</div></li>
     <li><div class="navbar-links" id="projectslink">Projects</div></li>
     <li><a target="_blank" id="githublink" href="https://github.com/GreatDanton">Github</a></li>
     <li><div class="navbar-links" id="contactlink">Contact</div></li>
@@ -43,7 +43,7 @@
     <div class="intro-text">
       <h1> Jan Pribošek </h1>
       <div class="intro-links">
-        <button id="aboutlink" class="blue">About me</button>
+        <button id="aboutlink" class="blue">About Me</button>
         <button id="projectslink" class="blue">Projects</button>
         <a target="_blank" href="https://github.com/GreatDanton"><button class="blue">Github</button></a>
         <button id="contactlink" class="blue">Contact</button>
@@ -53,9 +53,10 @@
 
 <div class="slide-2">
 
-<div class="container">
+
   <ul class="content">
-    <li><h2 id="about"> About me: </h2><br>
+    <div class="container">
+    <li><h2 id="about"> About Me: </h2><br>
         <p> I am 21 years old student of Civil Engineering. I really like to program, so I spend a lot of my free time programming and solving problems either the one I need or just random ones on Hacker Rank.</p><br>
         <p>In the meantime I am also testing open source programs (I am member of Ubuntu Linux U+1). I am currently looking for a job related to web-development, and I wanted to keep track of the things I did in the past.</p>
       <br>
@@ -66,8 +67,9 @@
           <li>Html5, Css3, Jquery</li>
         </ul>
     </li>
-
-    <li><h2 id="projects">Projects:</h2><br>
+  </div>
+  <div class="projects-container">
+    <li><div style="max-width: 1100px; margin: 0 auto"><h2 id="projects">Projects:</h2></div>
       <div class="projects">
         <a href="https://dry-sands-8840.herokuapp.com/" target="_blank">
           <div class="item">
@@ -77,13 +79,12 @@
           <p>Troller is a dynamic platform for commenting and rating on chosen discussions, written in Ruby on Rails.</p></div>
         </div>
           <img class="thumbnail" src="trollerpicture.png"></img>
-          <div class="item-title">Troller [:</div>
+          <div class="item-title">Troller</div>
           </div>
         </a>
 
         <a target="_blank" href="https://github.com/GreatDanton/Units-Converter">
           <div class="item">
-            <!--<p> Converting units from imperial into metric system as well as currencies converter.</p><br>-->
             <div class="item-overlay-content">
               <div class="description">
                 <p>Units Converter is a gui program for converting between metric and imperial system, as well as converting currencies using the latest ratios from Google finance.</p><br><p>Written in Python & PyQt.</p>
@@ -127,11 +128,13 @@
           </div>
         </a>
     </li>
-
+  </div>
+    <!-- end of projects -->
+    <div class="container">
     <li>
       <div class="contact-me">
         <div class="contact-me-title">
-        <h2 id="contact" class="turn-90"> Contact Me: </h2>
+        <h2 id="contact" class="turn-90" style="font-size: 36px"> Contact Me: </h2>
         </div>
       <div class="contact-me-details">
         <p> Feel free to contact me via email: </p>
