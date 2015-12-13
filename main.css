@@ -31,6 +31,11 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
 /* select color */
 
 ::-moz-selection {
@@ -309,6 +314,7 @@ body {
   top: 46%;
   transform: translateY(-46%);
   position: relative;
+  text-align: justify;
 }
 
 .item:hover .item-overlay-content {
