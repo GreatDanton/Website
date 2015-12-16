@@ -57,28 +57,28 @@ $("#back-to-top").click(function(){
   $("#laptop-picture").hide();
   $("#laptop-picture").animate({top: "-20px"}, 0);
 
-});
+  $(window).scroll(function(){
+    var scroll = $(document).scrollTop();
+    var height = $('.intro').height();
+    if (scroll >= height) {
+      $(".navbar").addClass("navbar-visible");
+      $(".navbar-links").addClass("underline-from-left");
+      $("#githublink").addClass("underline-from-left");
+      //$("#c-hamburger-span").css("background-color", "black");
+    } else {
+      $(".navbar").removeClass("navbar-visible");
+      $(".navbar-links").removeClass("underline-from-left");
+      $("#githublink").removeClass("underline-from-left");
+      //$("#c-hamburger-span").css("background-color", "white");
+    }
 
-$(window).scroll(function(){
-  var scroll = $(document).scrollTop();
-  var height = $('.intro').height();
-  if (scroll >= height) {
-    $(".navbar").addClass("navbar-visible");
-    $(".navbar-links").addClass("underline-from-left");
-    $("#githublink").addClass("underline-from-left");
-    //$("#c-hamburger-span").css("background-color", "black");
-  } else {
-    $(".navbar").removeClass("navbar-visible");
-    $(".navbar-links").removeClass("underline-from-left");
-    $("#githublink").removeClass("underline-from-left");
-    //$("#c-hamburger-span").css("background-color", "white");
-  }
+  // fade in laptop in contact me
+    var contactMeHeight = $("#contact").offset().top - 800;
+    if (scroll > contactMeHeight) {
 
-// fade in laptop in contact me
-  var contactMeHeight = $("#contact").offset().top - 800;
-  if (scroll > contactMeHeight) {
+      $("#laptop-picture").fadeIn({queue: false, duration: 1000});
+      $("#laptop-picture").animate({ right: "20px", top: "0"}, 1000);
+    }
+  });
 
-    $("#laptop-picture").fadeIn({queue: false, duration: 1000});
-    $("#laptop-picture").animate({ right: "20px", top: "0"}, 1000);
-  }
 });
