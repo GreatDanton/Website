@@ -86,6 +86,7 @@ p {
   -webkit-transition: color 0.3s ease-in;
           transition: color 0.3s ease-in;
   padding: 10px 20px;
+  min-height: 42px;
 }
 
 .navbar-links:hover {
