@@ -502,6 +502,20 @@ button:hover {
   color: #fff;
   opacity: 1; }
 
+.link {
+  color: #ff002b;
+}
+
+.certificate {
+  margin: 40px auto 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+.margin-top-70 {
+  margin-top: 70px;
+}
+
 /* media screens */
 @media screen and (max-width: 650px) {
   .intro-links {
