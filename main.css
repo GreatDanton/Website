@@ -94,10 +94,11 @@ p {
 }
 
 .navbar-visible {
-  background-color: rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255, 1);
   transform: matrix(1,0,-1,1,0,0);
   transform-origin: 0 0;
-  border-right: 1px solid white;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   padding: 0 20px;
 }
 
