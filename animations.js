@@ -64,12 +64,10 @@ $("#back-to-top").click(function(){
       $(".navbar").addClass("navbar-visible");
       $(".navbar-links").addClass("underline-from-left");
       $("#githublink").addClass("underline-from-left");
-      //$("#c-hamburger-span").css("background-color", "black");
     } else {
       $(".navbar").removeClass("navbar-visible");
       $(".navbar-links").removeClass("underline-from-left");
       $("#githublink").removeClass("underline-from-left");
-      //$("#c-hamburger-span").css("background-color", "white");
     }
 
   // fade in laptop in contact me
