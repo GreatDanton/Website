@@ -718,19 +718,14 @@ button:hover {
 
 .item {
   opacity: 1;
-  width: 100%;
   padding: 0 0;
   margin: 20px 0;
-  min-width: 250px;
+  width: 100%;
 }
 
 .item-overlay-content {
   padding: 0 3px;
   display: none;
-}
-
-.thumbnail {
-  width: 100%;
 }
 
 }
