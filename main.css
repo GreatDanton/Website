@@ -716,16 +716,24 @@ button:hover {
   padding: 0 5px;
 }
 
+.projects {
+  padding: 0 5px;
+}
+
 .item {
   opacity: 1;
   padding: 0 0;
   margin: 20px 0;
-  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
 }
 
 .item-overlay-content {
   padding: 0 3px;
   display: none;
+}
+
+.thumbnail {
 }
 
 }
