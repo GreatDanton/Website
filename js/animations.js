@@ -57,6 +57,13 @@ $("#back-to-top").click(function(){
   $("#laptop-picture").hide();
   $("#laptop-picture").animate({top: "-20px"}, 0);
 
+// ensures correct navbar style on page refresh
+if ($(document).scrollTop() > $('.intro').height()) {
+  $(".navbar").addClass("navbar-visible");
+  $(".navbar-links").addClass("underline-from-left");
+  $("#githublink").addClass("underline-from-left");
+}
+
   $(window).scroll(function(){
     var scroll = $(document).scrollTop();
     var height = $('.intro').height();
