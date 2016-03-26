@@ -260,7 +260,7 @@ p {
 .projects-navigation li{
   margin: 0px 0px !important;
   text-decoration: none;
-  width: 140px;
+  width: 150px;
   text-align: center;
   padding: 10px 0;
   border-bottom: 2px solid transparent;
@@ -268,6 +268,10 @@ p {
   list-style-type: none;
   transition: 0.3s ease;
   position: relative;
+  -ms-user-select: none;
+  user-select: none;
+  webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .projects-navigation li:hover {
@@ -649,7 +653,7 @@ button:hover {
     border-width: 13px;
     bottom: -21px;
   }
-  
+
 }
 
 
@@ -827,6 +831,18 @@ button:hover {
 }
 
 .thumbnail {
+}
+
+.projects-navigation {
+}
+
+.projects-navigation ul {
+  flex-wrap: wrap;
+}
+
+.projects-navigation li {
+  padding-top: 30px;
+  min-width: 50%;
 }
 
 }
