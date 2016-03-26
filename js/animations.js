@@ -6,6 +6,7 @@ function goToByScroll(id) {
   $('html, body').animate({
     scrollTop: $("#"+id).offset().top - 50}, 'slow');
 }
+
 // click on hamburger show modal
 $(".c-hamburger").click(function(e){
   e.preventDefault();
@@ -64,6 +65,62 @@ if ($(document).scrollTop() > $('.intro').height()) {
   $("#githublink").addClass("underline-from-left");
 }
 
+// #### FILTER PROJECTS ####
+// make array out of projects for filtering
+
+var htmlArray = $.makeArray($('.projects a'));
+
+function showProject(classname) {
+    $('.projects').html('');
+    for (i = 0; i < htmlArray.length; i++) {
+      if(htmlArray[i].className == "" + classname) {
+        $('.projects').append(htmlArray[i]);
+      }
+    }
+}
+
+// show only projects with right classname;
+// filtering from htmlArray
+$('#showFrontend').click(function() {
+  showProject('frontend');
+  $('#showFrontend').addClass('active');
+  $('#showAll').removeClass('active');
+  $('#showPython').removeClass('active');
+  $('#showRails').removeClass('active');
+});
+
+
+$('#showPython').click(function() {
+  showProject('python');
+  $('#showPython').addClass('active');
+  $('#showAll').removeClass('active');
+  $('#showFrontend').removeClass('active');
+  $('#showRails').removeClass('active');
+});
+
+
+$('#showRails').click(function() {
+  showProject('rails');
+  $('#showRails').addClass('active');
+  $('#showAll').removeClass('active');
+  $('#showFrontend').removeClass('active');
+  $('#showPython').removeClass('active');
+});
+
+
+$('#showAll').click(function() {
+  $('.projects').html('');
+  for (i = 0; i < htmlArray.length; i++){
+    $('.projects').append(htmlArray[i]);
+  }
+  $('#showAll').addClass('active');
+  $('#showRails').removeClass('active');
+  $('#showFrontend').removeClass('active');
+  $('#showPython').removeClass('active');
+});
+
+
+// scroll function to change style of navbar
   $(window).scroll(function(){
     var scroll = $(document).scrollTop();
     var height = $('.intro').height();

@@ -245,6 +245,100 @@ p {
   text-decoration: none;
 }
 
+.projects-navigation {
+  display: flex;
+  font-family: 'font1';
+  font-size: 30px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.projects-navigation ul {
+  display: inline-flex;
+}
+
+.projects-navigation li{
+  margin: 0px 0px !important;
+  text-decoration: none;
+  width: 140px;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  list-style-type: none;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.projects-navigation li:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.active {
+  border-bottom: 2px solid red !important;
+  color: red;
+}
+
+.active:before {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-color: red transparent transparent transparent;
+  border-width: 15px;
+  border-style: solid;
+  display: block;
+  content: "";
+}
+
+.active:after {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-color: #212121 transparent transparent transparent;
+  border-width: 18px;
+  border-style: solid;
+  display: block;
+  content: "";
+}
+
+/*.arrow {
+}
+
+.arrow:before {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-color: red transparent transparent transparent;
+  border-width: 15px;
+  border-style: solid;
+  display: block;
+  content: "";
+}
+
+.arrow:after {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-color: #222 transparent transparent transparent;
+  border-width: 18px;
+  border-style: solid;
+  display: block;
+  content: "";
+}*/
+
 .item {
   color: #fff;
   border: 1px solid #fff;
@@ -412,6 +506,7 @@ a:hover .item-title {
 
 #back-to-top {
   float: left;
+  transition: 0.3s ease;
 }
 
 #navbar-menu-mobile {
