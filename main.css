@@ -631,7 +631,27 @@ button:hover {
   .item-overlay-content {
     display: none;
   }
+
+  .projects-navigation {
+    font-size: 25px;
+  }
+
+  .projects-navigation li {
+    width: 100px;
+  }
+
+  .active:before {
+    border-width: 10px;
+    bottom: -21px;
+  }
+
+  .active:after {
+    border-width: 13px;
+    bottom: -21px;
+  }
+  
 }
+
 
 @media screen and (max-width: 450px) {
   .navbar {
