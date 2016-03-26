@@ -308,37 +308,6 @@ p {
   content: "";
 }
 
-/*.arrow {
-}
-
-.arrow:before {
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 0;
-  height: 0;
-  border-color: red transparent transparent transparent;
-  border-width: 15px;
-  border-style: solid;
-  display: block;
-  content: "";
-}
-
-.arrow:after {
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 0;
-  height: 0;
-  border-color: #222 transparent transparent transparent;
-  border-width: 18px;
-  border-style: solid;
-  display: block;
-  content: "";
-}*/
-
 .item {
   color: #fff;
   border: 1px solid #fff;
@@ -628,7 +597,7 @@ button:hover {
   }
 
   .intro-background {
-    background: url("construction2.png") no-repeat center center fixed;
+    background: url("images/construction2.png") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     padding: 0 0;
