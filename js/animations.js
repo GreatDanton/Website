@@ -38,7 +38,7 @@ $(".navbar-links").click(function(e){
 });
 
 // scroll when button in intro-links is pressed
-$(".intro-links > button").click(function(e){
+$(".intro-links > div").click(function(e){
   e.preventDefault();
   goToByScroll($(this).attr("id"));
 });
@@ -61,8 +61,6 @@ $("#back-to-top").click(function(){
 // ensures correct navbar style on page refresh
 if ($(document).scrollTop() > $('.intro').height()) {
   $(".navbar").addClass("navbar-visible");
-  $(".navbar-links").addClass("underline-from-left");
-  $("#githublink").addClass("underline-from-left");
 }
 
 // #### FILTER PROJECTS ####
@@ -126,12 +124,8 @@ $('#showAll').click(function() {
     var height = $('.intro').height();
     if (scroll >= height) {
       $(".navbar").addClass("navbar-visible");
-      $(".navbar-links").addClass("underline-from-left");
-      $("#githublink").addClass("underline-from-left");
     } else {
       $(".navbar").removeClass("navbar-visible");
-      $(".navbar-links").removeClass("underline-from-left");
-      $("#githublink").removeClass("underline-from-left");
     }
 
   // fade in laptop in contact me

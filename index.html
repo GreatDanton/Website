@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
 <link rel="icon" href="">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400&subset=latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -42,10 +42,22 @@
     <div class="intro-text">
       <h1> Jan Pribošek </h1>
       <div class="intro-links">
-        <button id="aboutlink" class="blue">About Me</button>
-        <button id="projectslink" class="blue">Projects</button>
-        <a target="_blank" href="https://github.com/GreatDanton"><button class="blue">Github</button></a>
-        <button id="contactlink" class="blue">Contact</button>
+
+        <div id ="aboutlink" class="button">
+          <span class="btn-text">About Me</span>
+        </div>
+
+        <div id="projectslink" class="button">
+          <span class="btn-text">Projects</span>
+        </div>
+
+        <a target="_blank" class="button" href="https://github.com/GreatDanton">
+          <span class="btn-text">Github</span>
+        </a>
+        <div id="contactlink" class="button">
+          <span class="btn-text">Contact </span>
+        </div>
+
       </div>
     </div>
   </div>
@@ -62,9 +74,9 @@
         <h2 class="margin-top-70"> Skills: </h2>
         <br>
         <ul class="bullets">
-          <li>Ruby on Rails</li>
           <li>Python</li>
           <li>Javascript</li>
+          <li>Ruby on Rails</li>
           <li>Html5, Css3, Jquery</li>
         </ul>
         <br><br>
