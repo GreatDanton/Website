@@ -64,8 +64,8 @@ p {
 .navbar a {
   color: #fff;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease-in;
-          transition: color 0.3s ease-in;
+  -webkit-transition: color 0.25s linear;
+          transition: color 0.25s linear;
   padding: 10px 20px;
 }
 
