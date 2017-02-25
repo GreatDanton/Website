@@ -1,0 +1,690 @@
+/* Dark part of website */
+$primary-color: #fff;
+$background-color: #181C1F;
+$background-color-light: #fafafa;
+$overlay-color: rgba(0, 0, 0, 0.3);
+$red-color: #ef2929;
+$p-font-size: 14px;
+$p-color: #ccc;
+
+/* Light part of website */
+$part-light-color: #323232;
+$part-light-background: #fafafa;
+
+/* Terminal colors */
+$terminal-background-color: #282a36;
+$terminal-border-color: #666;
+
+$terminal-text-color: #f0f0f0;
+$terminal-prompt-color: #57c6ff;
+$terminal-bash-cmd-color: #5af78e;
+
+$terminal-font: "Source Code Pro, Fira Code", monospace;
+
+//$terminal-bash-string-color: #f3f99c;
+$terminal-bash-string-color: #FFD75F;
+
+/* Transitions */
+$trans-linear-fast: all 0.2s linear;
+
+/* HERO */
+$hero-background-color: #fbfbfb;
+$hero-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c6c6c6' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+
+$project-background-color: #fbfbfb;
+$project-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dedede' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+
+/* CODE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: $red-color;
+  color: #000;
+}
+
+::selection {
+  background-color: $red-color;
+  color: #000;
+}
+
+.nav-btn-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.nav-btn {
+    height: 48px;
+    min-width: 120px;
+    text-align: center;
+    line-height: 48px;
+    font-size: $p-font-size;
+    border-radius: 0px;
+    border: 1px solid $terminal-text-color;
+    background-color: $background-color;
+    color: $terminal-text-color;
+    cursor: pointer;
+    padding: 0 20px;
+    margin: 10px 10px;
+    transition: $trans-linear-fast;
+    text-decoration: none;
+}
+
+.nav-btn:hover{
+    background-color: $terminal-text-color;
+    color: $background-color;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+a {
+    color: $red-color;
+    font-size: $p-font-size;
+}
+
+p {
+    font-size: $p-font-size;
+    color: $p-color;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid white;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+      display: inline-flex;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+}
+
+
+// tinker with hero image some more
+.hero {
+    position: relative;
+    text-align: center;
+    min-height: 400px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 50%;
+    // background-image: url("images/blue-test3.svg");
+    border-bottom: 1px solid white;
+    //background-color: $background-color-light;
+    background-color: $hero-background-color;
+    background-image: $hero-background-image;
+
+
+
+    h1 {
+        color: $primary-color;
+        font-size: 48px;
+        z-index: 1;
+        text-transform: uppercase;
+    }
+
+    .overlay {
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $overlay-color;
+    }
+}
+
+.terminal {
+    width: 500px;
+    min-height: 350px;
+    height: auto;
+    max-width: 100%;
+    // border: 1px solid $terminal-border-color;
+    border-radius: 5px;
+    background-color: $terminal-background-color;
+    // add subtle pattern?
+    box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.6);
+    text-align: left;
+    font-size: $p-font-size;
+    font-weight: 700;
+    font-family: $terminal-font;
+    line-height: 1.6;
+    margin: 10px;
+
+    p {
+        color: $terminal-text-color;
+    }
+
+    pre {
+        color: $terminal-text-color;
+        font-size: $p-font-size;
+        line-height: 1.6;
+        font-family: $terminal-font;
+    }
+
+
+
+    .title-bar {
+        height: 30px;
+        border-bottom: 1px solid $terminal-border-color;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+
+        p {
+            margin: 0 auto;
+        }
+
+        .btn-bar {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            display: flex;
+            z-index: 1;
+        }
+
+        .btn {
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: $trans-linear-fast;
+        }
+
+        .btn:hover {
+            color: $terminal-prompt-color;
+
+            .maximize-btn {
+                border: 1px solid $terminal-prompt-color;
+            }
+        }
+
+        .minimize-btn {
+            line-height: 8px;
+        }
+
+        .maximize-btn {
+            margin: 2px auto;
+            width: 8px;
+            height: 8px;
+            border: 1px solid $terminal-text-color;
+            transition: $trans-linear-fast;
+        }
+
+    }
+
+
+// bash code part
+    .terminal-main {
+        padding: 20px 30px;
+
+        .bash-output {
+            margin-left: 40px;
+            padding-left: 5px;
+            position: relative;
+        }
+
+        .bash-output:before {
+            position: absolute;
+            border-bottom: 1px solid $terminal-text-color;
+            content: "";
+            width: 15px;
+            top: 10px;
+            left: -20px;
+        }
+
+        .bash-output:after {
+            content: "";
+            position: absolute;
+            border-right: 1px solid $terminal-text-color;
+            top: 0;
+            height: 10px;
+            left: -20px;
+        }
+
+        .line {
+            position: relative;
+            width: 100%;
+        }
+
+        // displaying blinking cursor at the end of each line
+        .line:nth-last-child(-n+1):after {
+            content: "";
+            width: 8px;
+            height: 18px;
+            top: 2px;
+            margin-left: 2px;
+            position: absolute;
+            background-color: $terminal-text-color;
+            animation: blink-animation 1s step-start 0s infinite;
+        }
+
+        @keyframes blink-animation {
+            50% {
+                opacity: 0.0;
+            }
+        }
+        
+        // disabling blinking cursor when typing in terminal
+        .no-blinking:after {
+            animation: none !important;
+        }
+
+    }
+
+    // colorize bash input
+    .bash {
+        color: $terminal-bash-cmd-color;
+    }
+
+    .prompt {
+        color: $terminal-prompt-color;
+    }
+
+    .string {
+        color: $terminal-bash-string-color;
+    }
+
+    .block-cursor {
+        width: 20px;
+        height: 20px;
+        background-color: $terminal-text-color;
+    }
+
+}
+
+/* END OF TERMINAL PART */
+
+
+/* PARTS */
+
+.part-background {
+    width: 100%;
+    background: $background-color;
+}
+
+.part-background-light {
+    background: $part-light-background;
+}
+
+.part {
+    max-width: 960px;
+    padding: 60px 30px;
+    display: block;
+    margin: 0 auto;
+
+
+    h2 {
+    position: relative;
+    padding: 20px 0 10px 0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    }
+
+    h2:after {
+    position: absolute;
+    content:"";
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid $primary-color;
+    width: 200px;
+    }
+
+    p {
+        padding-left: 30px;
+    }
+
+    ul {
+        padding-left: 30px;
+        list-style-position: inside;
+        font-size: $p-font-size;
+        color: $p-color;
+    }
+}
+
+.part-light {
+    background-color: $part-light-background;
+    color: $part-light-color;
+
+    h2:after {
+        border-bottom: 2px solid $part-light-color;
+    }
+}
+
+// Email part
+.email {
+	fill: $primary-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: 100px 0 160px 0;
+	
+    .email-icon {
+        margin-right: 10px;
+    }
+}
+
+footer {
+    background: #0B0B0B;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    line-height: 2;
+    transition: $trans-linear-fast;
+
+    p {
+        transition: $trans-linear-fast;
+    }
+
+    p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    a {
+        cursor: pointer;
+        color: $p-color;
+        transition: $trans-linear-fast;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $primary-color;
+    }
+}
+
+.part-project {
+    background: transparent;
+}
+
+.part-background-light {
+    background-image: $project-background-image;
+    background-color: $project-background-color;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project {
+        width: 280px;
+        height: 320px;
+        border: 1px solid $part-light-color;
+        text-align: center;
+        position: relative;
+        margin: 10px;
+        overflow-y: hidden;
+        background-color: $part-light-background;
+        display: block;
+
+        img {
+            width: 100%;
+            padding: 10px 10px 0 10px;
+        }
+
+        .title {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background: $part-light-background;
+            border-top: 1px solid $part-light-color;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(23, 23, 23, 0.85);
+            transition: all 0.25s ease-out;
+            opacity: 0;
+        }
+
+        .description {
+            position: absolute;
+            text-align: left;
+            color: $primary-color;
+            top: 30%;
+            padding: 20px;
+            //font-size: $p-font-size;
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.25s ease-out;
+            transform: translateY(0%);
+
+            p {
+                color: $primary-color;
+                padding: 0;
+                margin: 14px 0;
+            }
+        }
+
+    }
+
+    .project:hover {
+        .overlay {
+            opacity: 1;
+        }
+
+        .description {
+            opacity: 1;
+            transform: translateY(-30%);
+        }
+
+    }
+
+    p {
+        color: $part-light-color;
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        flex-grow: 1;
+    }
+
+}
+
+
+
+/* MEDIA */
+
+@media screen and (max-width: 700px) {
+    .part {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .part {
+        p {
+            padding: 0;
+        }
+    }
+
+    /* hide descriptions of projects on mobile view */
+    .overlay {
+        display: none;
+    }
+    .description {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .nav-btn {
+        margin: 10px;
+    }
+
+    .part {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .part {
+        padding: 20px 8px;
+    }
+
+    .project-container {
+        .project {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+}
+
+
+
+/* UTILITIES */
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.row-v {
+    flex-flow: column;
+}
+
+.centered {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* CURRENTLY LEARNING part*/
+
+.currently-learning {
+    flex-flow: column;
+    align-items: center;
+    margin: 60px 0;
+
+    h3 {
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+.icon-box {
+    display: block;
+    margin: 0 auto;
+    fill: $p-color;
+    width: 150px;
+    height: 150px;
+    border: 1px solid $p-color;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    transition: $trans-linear-fast;
+
+    p {
+        padding: 0;
+        margin-top: 5px;
+        transition: $trans-linear-fast;
+    }
+}
+
+.icon-box:hover {
+    fill: $primary-color;
+
+    p {
+        color: $primary-color;
+    }
+}
+
+
+/* PROJECT GRID */
+/* GRID WITHOUT BORDERS ON SIDE */
+.inner-grid {
+    max-width: 450px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .inner-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -2px -2px 0;
+        padding: 0;
+    }
+    
+    .item {
+        flex: 1 0 150px;
+        height: 150px;
+        border-right: 1px solid $p-color;
+        border-bottom: 1px solid $p-color;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        fill: $p-color;
+        transition: $trans-linear-fast;
+
+        &:empty {
+            height: 0;
+            border: none;
+        }
+    }
+
+    p {
+        transition: $trans-linear-fast;
+    }
+
+    .item:hover {
+        color: $background-color-light;
+        fill: $background-color-light;
+    }
+
+    .item:hover p {
+        color: $background-color-light;
+    }
+
+    .item p {
+        margin-top: 5px;
+        padding: 0;
+    }
+
+}
+/* END OF GRID */
