@@ -11,11 +11,11 @@ function typing(sentence, delayBeforeEnter) {
     let index = 0;
     let last_line = terminal_main.lastElementChild;
     last_line.classList.add('no-blinking');
-    
+
     // terminal output
     function terminalReturn(output) {
-            terminal.innerHTML += bashOutput(output);
-            terminal.innerHTML += createLine();
+        terminal.innerHTML += bashOutput(output);
+        terminal.innerHTML += createLine();
     }
 
     // immediately invoking function
@@ -25,10 +25,10 @@ function typing(sentence, delayBeforeEnter) {
         // terminal output (=enter)
         if (i >= sentence.length) {
             last_line.classList.remove('no-blinking');
-            setTimeout(function() { terminalReturn("Jan Pribošek");}, delayBeforeEnter);
+            setTimeout(function() { terminalReturn("Jan Pribošek"); }, delayBeforeEnter);
             return;
         }
-        setTimeout(function(){writer(i);}, 100);
+        setTimeout(function() { writer(i); }, 100);
     })(0);
 } // end of typing function
 
@@ -46,7 +46,7 @@ function createLine() {
 }
 
 terminal.innerHTML += createLine();
-typing("echo $(whoami) $(hostname)", 1300);
+typing("echo $(whoami) $(hostname)", 1000);
 
 
 // scroll animations
@@ -62,7 +62,7 @@ function navBtnClick() {
             return;
         }
     }
-    
+
     let chosenID = document.getElementById(link);
     let chosenID_offset = chosenID.offsetTop;
 
