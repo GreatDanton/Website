@@ -46,7 +46,7 @@ function createLine() {
 }
 
 terminal.innerHTML += createLine();
-typing("echo $(whoami) $(hostname)", 1000);
+typing("echo $(whoami) $(hostname)", 850);
 
 
 // scroll animations
