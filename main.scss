@@ -124,6 +124,8 @@ p {
     border-bottom: 1px solid #1a1a1a;
     background-color: $hero-background-color;
     background-image: $hero-background-image;
+    animation-duration: 1s;
+    animation-name: displayText;
 
     h1 {
         color: $primary-color;
@@ -133,14 +135,69 @@ p {
     }
 
     .job-title {
+        position: relative;
         margin-top: 30px;
         padding: 25px 0px;
-        border-top: 2px solid $primary-color;
-        border-bottom: 2px solid $primary-color;
+        //border-top: 2px solid $primary-color;
+        //border-bottom: 2px solid $primary-color;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 20px;
         max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    // fading in whole hero part
+    @keyframes displayText {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    // draw borders around the job title
+    .job-title:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        border-top: 2px solid $primary-color;
+        width: 100%;
+        animation-duration: 0.5s;
+        animation-name: border-top-slide;
+        animation-timing-function: ease-in-out;
+    }
+    .job-title:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid $primary-color;
+        animation-duration: 0.5s;
+        animation-name: border-bot-slide;
+        animation-timing-function: ease-in-out;
+    }
+
+    // animating job-title border slide - bottom border
+    @keyframes border-bot-slide {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+    // animating title border slide - top border
+    @keyframes border-top-slide {
+        from {
+            left: 100%;
+        }
+        to {
+            left: 0;
+        }
     }
 }
 
