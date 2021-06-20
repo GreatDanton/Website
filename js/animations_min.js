@@ -1,1 +1,0 @@
-"use strict";function navBtnClick(){for(var t=this.classList,n="",e=0;e<t.length;e++){if(!t[e].indexOf("-link"))return;n=t[e].split("-")[0]}var i=document.getElementById(n).offsetTop;zenscroll.toY(i)}for(var navButtons=document.getElementsByClassName("nav-links"),i=0;i<navButtons.length;i++)navButtons[i].addEventListener("click",navBtnClick);
