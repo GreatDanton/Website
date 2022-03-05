@@ -6,9 +6,53 @@
     <meta name="description" content="Jan Pribošek - Senior Software Developer, portfolio website">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Here we eliminate render blocking css call to Google fonts server by embedding the necessary
+        fonts directly in the head. Browsers that don't support woff2 will not be able to see the font,
+        but that's okay since nobody is going to be browsing this website with ancient browser anyway. -->
+    <style type="text/css">
+        /* latin-ext, čšž only */
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-stretch: normal;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4ie0N9lvNzDUuDFNmz2yguonaUnmltLA&skey=62c1cbfccc78b4b2&v=v28) format('woff2');
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext, čšž only */
+        @font-face {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-stretch: normal;
+          font-display: swap;
+          src: url(https://fonts.gstatic.com/l/font?kit=memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4ie0N9lvNzDUuDFNmz2yguonaUnmltLA&skey=62c1cbfccc78b4b2&v=v28) format('woff2');
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-stretch: normal;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVI.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -60,16 +104,15 @@
                         rel="noopener noreferer nofollow">ESO E-ELT</a>)
                 </li>
                 <li>Control system for monitoring and controlling of ESA space systems
-                    (<a href="http://www.egscc.esa.int/about.html" target="_blank" rel="noopener noreferer nofollow">ESA
-                        EGS-CC</a>)
+                    (<a href="http://www.egscc.esa.int/about.html" target="_blank"
+                        rel="noopener noreferer nofollow">ESA EGS-CC</a>)
                 </li>
                 <li>Control system for a particle accelerator
                     (<a href="https://xfel.desy.de/" target="_blank" rel="noopener noreferer nofollow">DESY XFEL</a>)
                 </li>
                 <li>Control system for a cancer treatment machine
                     (<a href="https://radiotherapy.cosylab.com/modalities/particle-therapy/" target="_blank"
-                        rel="noopener noreferer nofollow">Treatment
-                        One</a>)
+                        rel="noopener noreferer nofollow">Treatment One</a>)
                 </li>
             </ul>
             <br />
@@ -82,11 +125,13 @@
             <h2 id="skills"> Skills </h2>
             <p>Due to the nature of my job I have to be comfortable with anything that a large
                 software project demands: from designing distributed systems, programming
-                in various languages to writing deployment scripts for Linux servers.
+                in various languages to setting up Linux servers and continuous integration
+                systems.
             </p>
 
-            <p>Despite being able to adapt to the project's needs, I am mostly interested in
-                developing mission critical backend systems in Java.</p>
+            <p>Despite being able to adapt to the project's needs, my main expertise is
+                developing mission critical backend systems with Java.
+            </p>
 
             <div class="skills-grid">
                 <div class="inner-wrap">

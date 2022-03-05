@@ -125,19 +125,19 @@ p {
     // animating job-title border slide - bottom border
     @keyframes border-top-slide {
         from {
-            left: -100%;
+            transform: translateX(-100%);
         }
         to {
-            left: 0;
+            transform: translateX(0);
         }
     }
     // animating title border slide - top border
     @keyframes border-bot-slide {
         from {
-            left: 100%;
+            transform: translateX(100%);
         }
         to {
-            left: 0;
+            transform: translateX(0);
         }
     }
 }
@@ -146,11 +146,10 @@ p {
 @keyframes displayText {
     from {
         opacity: 0;
-        top: -1.4rem;
+        transform: translateY(-1.4rem);
     }
     to {
-        opacity: 1;
-        top: 0;
+        transform: translateY(0rem);
     }
 }
 
