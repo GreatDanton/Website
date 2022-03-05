@@ -6,6 +6,7 @@ $overlay-color: rgba(0, 0, 0, 0.3);
 $red-color: #ef2929;
 $p-font-size: 14px;
 $p-color: #ccc;
+$footer-color: #8b8f92;
 
 /* Light part of website */
 $part-light-color: #323232;
@@ -91,26 +92,6 @@ a {
 p {
     font-size: $p-font-size;
     color: $p-color;
-}
-
-.navbar {
-    position: fixed;
-    z-index: 10;
-    border-bottom: 1px solid white;
-
-    ul {
-        display: flex;
-    }
-
-    li {
-        display: inline-flex;
-    }
-
-    a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 20px;
-    }
 }
 
 .hero {
@@ -220,15 +201,16 @@ p {
 
 
 .part {
-    max-width: 960px;
-    padding: 60px 30px;
+    /*max-width: 960px;*/
+    max-width: 50rem;
+    padding: 4rem 2rem;
     display: block;
     margin: 0 auto;
 
     h2 {
         position: relative;
-        padding: 20px 0 10px 0;
-        margin-bottom: 40px;
+        padding: 1.4rem 0 0.5rem 0;
+        margin-bottom: 1.5rem;
         text-transform: uppercase;
     }
 
@@ -238,18 +220,27 @@ p {
         left: 0;
         bottom: 0;
         border-bottom: 2px solid $primary-color;
-        width: 200px;
+        width: 12rem;
     }
 
     p {
-        padding-left: 30px;
+        line-height: 1.4;
+        margin-bottom: 1rem;
     }
 
     ul {
-        padding-left: 30px;
-        list-style-position: inside;
+        /* Outside position with left padding is used in case
+        the "li" text wraps - we want the text to be vertically
+        aligned.
+
+        If we set the list-style-position to inside that
+        doesn't happen and bullet points are harder to scan.
+        */
+        list-style-position: outside;
+        padding-left: 2rem;
         font-size: $p-font-size;
         color: $p-color;
+        line-height: 1.4;
     }
 }
 
@@ -260,6 +251,15 @@ p {
     h2:after {
         border-bottom: 2px solid $part-light-color;
     }
+
+    p, li {
+        color: $part-light-color;
+    }
+
+    a {
+        /* We want default blue links on white background */
+        color: revert;
+    }
 }
 
 // Email part
@@ -268,53 +268,78 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0 160px 0;
+    margin: 6rem 0 4rem 0;
 
     .email-icon {
-        margin-right: 10px;
+        margin-right: 0.6rem;
     }
 }
 
+/* Bring 'skills' and 'contact' section closer together */
+#section-skills {
+    .part {
+        padding-bottom: 1rem;
+    }
+}
+#section-contact {
+    .part {
+        padding-top: 0;
+    }
+}
 
+// Footer
 footer {
     background: #0B0B0B;
-    height: 250px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    line-height: 2;
-    transition: $trans-linear-fast;
-
-    p {
-        transition: $trans-linear-fast;
-    }
-
-    p:hover {
-        text-decoration: underline;
-        cursor: pointer;
-        color: #fff;
-    }
+    padding: 1.5rem 0;
 
     a {
         cursor: pointer;
-        color: $p-color;
+        color: $footer-color;
         transition: $trans-linear-fast;
+        text-decoration: none;
     }
 
     a:hover {
         text-decoration: underline;
-        color: $primary-color;
     }
 
-    a {
-        text-decoration: none;
-    }
+    .footer-links {
+        color: $footer-color;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-links li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+
+      .footer-links a {
+        margin: 0 5px;
+      }
+
+      .footer-links li::before {
+        content: '•';
+        position: relative;
+        /* This margin is necessary with current font, so
+        that the bullet between links appear centered */
+        margin-left: 3px;
+      }
+
+      .footer-links li:first-child::before {
+        display: none;
+      }
 }
 
 
 .part-project {
+    /* remove white background for the entire section, so that
+       text is displayed directly on the white image */
     background: transparent;
 }
 
@@ -417,12 +442,11 @@ footer {
     }
 }
 
-
 /* MEDIA */
 
 @media screen and (max-width: 700px) {
     .part {
-        padding: 50px 20px;
+        padding: 3.5rem 1.4rem;
     }
 }
 
@@ -430,6 +454,14 @@ footer {
     .part {
         p {
             padding: 0;
+        }
+
+        /* increase padding between list elements, since
+        that makes them easier to read when the lines are
+        wrapped
+        */
+        ul li {
+            margin-bottom: 0.8rem;
         }
     }
 
@@ -445,17 +477,17 @@ footer {
 
 @media screen and (max-width: 450px) {
     .nav-btn {
-        margin: 10px;
+        margin: 0.8rem;
     }
 
     .part {
-        padding: 30px 15px;
+        padding: 2.1rem 1rem;
     }
 }
 
 @media screen and (max-width: 300px) {
     .part {
-        padding: 20px 8px;
+        padding: 1.4rem 0.7rem;
     }
 
     .project-container {
@@ -468,7 +500,6 @@ footer {
 
 
 /* UTILITIES */
-
 .row {
     width: 100%;
     display: flex;
@@ -486,13 +517,11 @@ footer {
 }
 
 
-/* PROJECT GRID */
-/* GRID WITHOUT BORDERS ON SIDE */
-
+/* Skills section grid, grid without borders on the side */
 .skills-grid {
-    max-width: 450px;
+    max-width: 27rem;
     overflow: hidden;
-    margin: 60px auto 60px auto;
+    margin: 4.2rem auto 4.2rem auto;
 
     .inner-wrap {
         display: flex;
@@ -502,8 +531,8 @@ footer {
     }
 
     .item {
-        flex: 1 0 150px;
-        height: 150px;
+        flex: 1 0 9rem;
+        height: 9rem;
         border-right: 1px solid $p-color;
         border-bottom: 1px solid $p-color;
         display: flex;
@@ -521,6 +550,7 @@ footer {
 
     p {
         transition: $trans-linear-fast;
+        margin-bottom: 0;
     }
 
     .item:hover {
@@ -534,7 +564,7 @@ footer {
     }
 
     .item p {
-        margin-top: 5px;
+        margin-top: 0.36rem;
         padding: 0;
     }
 }
